@@ -4,7 +4,8 @@ import { Citi, Crud } from '../global'
 
 export default class UserController implements Crud {
 
-    async create(request: Request, response: Response){
+    async create(request: Request, response: Response){ 
+       
         const {firstName, lastName, age} = request.body;
 
         const isAnyUndefined = Citi.areValuesUndefined(firstName, lastName, age);

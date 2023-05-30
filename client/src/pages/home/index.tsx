@@ -4,10 +4,10 @@ import { LogoCITi } from '../../assets';
 
 
 export const Home: React.FC = () => {
-    return (
+    return (<>
         <HomeContainer>
             <img src={LogoCITi} alt="" />
-            <h1>ReactJS Boilerplate</h1>
+            <h1>Aspirante Giulyano Santos</h1>
             <p>
                 Made with
                 {' '}
@@ -17,8 +17,10 @@ export const Home: React.FC = () => {
                 {' '}
                 <strong>&hearts;</strong>
                 {' '}
-                by CITi
-            </p>
+                by Giulyano Santos
+            </p> 
+          
         </HomeContainer>
-    );
+       <h1>Teste</h1>
+    </>);
 }
