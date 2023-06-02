@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer')
 const SMTP_CONFIG = require('./config/smtp');
 
-process.env
+
 
 const transporter = nodemailer.createTransport({
   host: SMTP_CONFIG.host,
