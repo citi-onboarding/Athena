@@ -1,6 +1,7 @@
 import express from 'express';
 import UserController from '@controllers/UserController'
 import TestimonyController from '@controllers/TestimonyController'
+import FooterController from '@controllers/FooterController'
 import PeopleAthenaController from '@controllers/PeopleAthenaController';
 
 const routes = express.Router();
@@ -18,6 +19,15 @@ routes.post('/testimony', testimonyController.create);
 routes.get('/testimony', testimonyController.get);
 routes.delete('/testimony/:id', testimonyController.delete);
 routes.put('/testimony/:id', testimonyController.update);
+
+// Rotas do footer
+
+const footerController = new FooterController();
+
+routes.post('/footer', footerController.create);
+routes.get('/footer', footerController.get);
+routes.delete('/footer/:id', footerController.delete);
+routes.put('/footer/:id', footerController.update);
 
 // Rotas PeopleAthenas
 // Cria instância de classe 
