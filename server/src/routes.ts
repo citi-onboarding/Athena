@@ -2,6 +2,7 @@ import express from 'express';
 import UserController from '@controllers/UserController'
 import TestimonyController from '@controllers/TestimonyController'
 import FooterController from '@controllers/FooterController'
+import NavBarController from '@controllers/NavBarController'
 import PeopleAthenaController from '@controllers/PeopleAthenaController';
 
 const routes = express.Router();
@@ -28,6 +29,15 @@ routes.post('/footer', footerController.create);
 routes.get('/footer', footerController.get);
 routes.delete('/footer/:id', footerController.delete);
 routes.put('/footer/:id', footerController.update);
+
+// Rotas do navbar
+
+const navbarController = new NavBarController();
+
+routes.post('/navbar', navbarController.create);
+routes.get('/navbar', navbarController.get);
+routes.delete('/navbar/:id', navbarController.delete);
+routes.put('/navbar/:id', navbarController.update);
 
 // Rotas PeopleAthenas
 // Cria instância de classe 
