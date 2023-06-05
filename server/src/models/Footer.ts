@@ -3,7 +3,7 @@ import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
 //modelo do footer
 
 @Entity()
-export class NavBar {
+export class Footer {
 
     @PrimaryGeneratedColumn()
     id: number
