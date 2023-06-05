@@ -3,15 +3,18 @@ import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
 //modelo do footer
 
 @Entity()
-export class Footer {
+export class NavBar {
 
     @PrimaryGeneratedColumn()
     id: number
 
     @Column()
-    namedata: string
+    nameInstadata: string
 
     @Column()
-    textdata: string
-
+    numberdata: string
+    
+    @Column()
+    addressdata: string
+    
 }
