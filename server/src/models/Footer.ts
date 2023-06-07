@@ -9,9 +9,12 @@ export class Footer {
     id: number
 
     @Column()
-    namedata: string
+    nameInstadata: string
 
     @Column()
-    textdata: string
-
+    numberdata: string
+    
+    @Column()
+    addressdata: string
+    
 }

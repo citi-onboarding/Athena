@@ -8,12 +8,12 @@ export default class FooterController implements Crud {
 
     async create(request: Request, response: Response){ 
        
-        const {namedata, textdata} = request.body;
+        const {nameInstadata, numberdata, addressdata} = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(namedata, textdata);
+        const isAnyUndefined = Citi.areValuesUndefined(nameInstadata, numberdata, addressdata);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newFooter = { namedata, textdata };
+        const newFooter = { nameInstadata, numberdata, addressdata };
         const {httpStatus, message} = await Citi.insertIntoDatabase(Footer, newFooter);
 
         return response.status(httpStatus).send({ message });
@@ -36,12 +36,12 @@ export default class FooterController implements Crud {
 
     async update(request: Request, response: Response){
         const { id } = request.params;
-        const {namedata, textdata } = request.body;
+        const {nameInstadata, numberdata, addressdata } = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(namedata, textdata, id);
+        const isAnyUndefined = Citi.areValuesUndefined(nameInstadata, numberdata, addressdata, id);
         if(isAnyUndefined) return response.status(400).send();
 
-        const footerWithUpdatedValues = { namedata, textdata };
+        const footerWithUpdatedValues = { nameInstadata, numberdata, addressdata };
 
         const { httpStatus, messageFromUpdate } = await Citi.updateValue(Footer, id, footerWithUpdatedValues);
         return response.status(httpStatus).send({ messageFromUpdate });
