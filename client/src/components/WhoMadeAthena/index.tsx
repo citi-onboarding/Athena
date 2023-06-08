@@ -11,21 +11,25 @@ const WhoMadeAthena: React.FC = () => {
    
   const [athenaPeople, setAthenPeople ] = useState<any[]>([])
 
-  // console.log(athenaPeople)
+
   
    const getPeople = async () => {
      
-      await api.get('/peopleathena').then((res)=>{
+      await api.get('/peopleathena')
+      .then((res)=>{
       setAthenPeople(res.data)
      }).catch((e)=>{console.log(e)}) 
      
-
    }
+
+
 
     useEffect(()=>{
       getPeople()
     },[]) 
+
    
+
   return(
   <AthenContainerStyled>
    
@@ -36,12 +40,13 @@ const WhoMadeAthena: React.FC = () => {
    
    <AthenaCardWrapper >
     
-   {athenaPeople.map( (people) => {
+   {athenaPeople.map((people) => {
     return(
       <CardAthena  key={ people.id} name={people.name} text={people.text} image={people.image}/>
     )
    })}
 
+   
    </AthenaCardWrapper>
 
 
