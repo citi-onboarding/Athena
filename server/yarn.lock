@@ -1080,6 +1080,13 @@
   "resolved" "https://registry.npmjs.org/@types/node/-/node-16.11.32.tgz"
   "version" "16.11.32"
 
+"@types/nodemailer@^6.4.8":
+  "integrity" "sha512-oVsJSCkqViCn8/pEu2hfjwVO+Gb3e+eTWjg3PcjeFKRItfKpKwHphQqbYmPQrlMk+op7pNNWPbsJIEthpFN/OQ=="
+  "resolved" "https://registry.npmjs.org/@types/nodemailer/-/nodemailer-6.4.8.tgz"
+  "version" "6.4.8"
+  dependencies:
+    "@types/node" "*"
+
 "@types/strip-bom@^3.0.0":
   "integrity" "sha1-FKjsOVbC6B7bdSB5CuzyHCkK69I= sha512-xevGOReSYGM7g/kUBZzPqCrR/KYAo+F0yiPc85WFTJa0MSLtyFTVTU6cJu/aV4mid7IffDIWqo69THF2o4JiEQ=="
   "resolved" "https://registry.npmjs.org/@types/strip-bom/-/strip-bom-3.0.0.tgz"
@@ -2191,6 +2198,11 @@
   "integrity" "sha512-U9h1NLROZTq9uE1SNffn6WuPDg8icmi3ns4rEl/oTfIle4iLjTliCzgTsbaIFMq/Xn078/lfY/BL0GWZ+psK4Q=="
   "resolved" "https://registry.npmjs.org/node-releases/-/node-releases-2.0.5.tgz"
   "version" "2.0.5"
+
+"nodemailer@^6.9.3":
+  "integrity" "sha512-fy9v3NgTzBngrMFkDsKEj0r02U7jm6XfC3b52eoNV+GCrGj+s8pt5OqhiJdWKuw51zCTdiNR/IUD1z33LIIGpg=="
+  "resolved" "https://registry.npmjs.org/nodemailer/-/nodemailer-6.9.3.tgz"
+  "version" "6.9.3"
 
 "normalize-path@^3.0.0", "normalize-path@~3.0.0":
   "integrity" "sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA=="

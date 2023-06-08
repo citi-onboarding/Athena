@@ -2,8 +2,11 @@ import express from 'express';
 import UserController from '@controllers/UserController'
 import TestimonyController from '@controllers/TestimonyController'
 import PeopleAthenaController from '@controllers/PeopleAthenaController';
+import SendMail from '@controllers/MailController';
 
 const routes = express.Router();
+
+// Rotas User
 const userController = new UserController();
 
 routes.post('/user', userController.create);
@@ -19,15 +22,17 @@ routes.get('/testimony', testimonyController.get);
 routes.delete('/testimony/:id', testimonyController.delete);
 routes.put('/testimony/:id', testimonyController.update);
 
-// Rotas PeopleAthenas
-// Cria instância de classe 
+// Rotas peopleAthena 
 const peopleAthenaController = new PeopleAthenaController()
 
-// Coloca os métodos dentro das rotas
 routes.post('/peopleAthena', peopleAthenaController.create);
 routes.get('/peopleathena', peopleAthenaController.get);
 routes.delete('/peopleathena/:id', peopleAthenaController.delete);
 routes.put('/peopleathena/:id', peopleAthenaController.update);
+
+// Rota nodemailer 
+
+routes.post('/email',SendMail)
 
 
 export default routes;
