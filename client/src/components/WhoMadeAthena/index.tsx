@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AthenContainerStyled, AthenHeadingStyled, AthenaCardWrapper } from "./style";
-import CardAthena, { ICardAthena } from "../CardAthena";
+import CardAthena from "../CardAthena";
 import {api} from '../../services/api'
 
 
