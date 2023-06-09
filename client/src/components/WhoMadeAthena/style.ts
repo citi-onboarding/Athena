@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // Engloba todos os elementos da seção "Quem faz a Athena"
 export const AthenContainerStyled = styled.div`
 
-width: 100vw;
+width: 98vw;
 height: 702px;
 
 /* display: flex;
