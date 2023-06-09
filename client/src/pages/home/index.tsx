@@ -1,15 +1,17 @@
 import React from "react";
 import WhoMadeAthena from "../../components/WhoMadeAthena";
-import Navathena from "../../components/Nav";
-import Footerathena from "../../components/Foot";
-
+import NavAthena from "../../components/Nav";
+import FooterAthena from "../../components/Foot";
+import BodyAthena from "../../components/Body";
 
 
 export const Home: React.FC = () => {
     return (<>
-    <Navathena />
+
+    <NavAthena />
+    <BodyAthena/>
      <WhoMadeAthena />
-     <Footerathena />
+     <FooterAthena />
  
     </>);
 }

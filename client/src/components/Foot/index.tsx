@@ -8,8 +8,6 @@ interface information{
     id: number;
     nameInstadata: string;
     numberdata: string;
-    addressdata: string;
-
 }
 
 const Footerathena: React.FC = () => { 
