@@ -21,3 +21,4 @@ application.use(express.static(__dirname + '/public'));
 application.listen(process.env.PORT || 3001, () => {
     console.log('📦 Server running');
 });
+

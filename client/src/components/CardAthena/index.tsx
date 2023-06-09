@@ -10,9 +10,10 @@ export interface ICardAthena {
 
 const CardAthena: React.FC<ICardAthena> = ({name,image,text}) => {
   return(<>
+   
     <CardContainerStyled >
       
- 
+     
       <img src={image} alt='Profile pic'/>
     
       <CardContentStyled>

@@ -7,7 +7,7 @@ export class PeopleAthena {
     id: number
 
     @Column()
-    name: string
+    name: string 
 
     @Column()
     image: string
