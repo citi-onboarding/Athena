@@ -2,6 +2,7 @@ import express from 'express';
 import UserController from '@controllers/UserController'
 import TestimonyController from '@controllers/TestimonyController'
 import FooterController from '@controllers/FooterController'
+import BodyController from '@controllers/BodyController'
 import NavBarController from '@controllers/NavBarController'
 import PeopleAthenaController from '@controllers/PeopleAthenaController';
 
@@ -29,6 +30,15 @@ routes.post('/footer', footerController.create);
 routes.get('/footer', footerController.get);
 routes.delete('/footer/:id', footerController.delete);
 routes.put('/footer/:id', footerController.update);
+
+// Rotas do body
+
+const bodyController = new BodyController();
+
+routes.post('/body', bodyController.create);
+routes.get('/body', bodyController.get);
+routes.delete('/body/:id', bodyController.delete);
+routes.put('/body/:id', bodyController.update);
 
 // Rotas do navbar
 
