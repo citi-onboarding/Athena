@@ -3,15 +3,15 @@ import styled from "styled-components";
 
 export const CardContainerStyled = styled.div`
 
-width: fit-content;
+width: 50%;
 height: auto;
 margin: 0 auto;
-
+background-color: purple;
 
 `
 
 export const CardTextContent = styled.div`
-/* background-color: red; */
+background-color: red;
 
 font-family: 'Poppins';
 font-style: normal;
