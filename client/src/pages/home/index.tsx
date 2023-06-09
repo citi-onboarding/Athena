@@ -1,25 +1,21 @@
 import React from "react";
-import { HomeContainer } from './styles';
-import { LogoCITi } from '../../assets';
+import WhoMadeAthena from "../../components/WhoMadeAthena";
+import NavAthena from "../../components/Nav";
+import BodyAthena from "../../components/Body";
+import ContactUs from "../../components/ContactUs";
+import Footerathena from "../../components/Foot";
+
+
 
 export const Home: React.FC = () => {
     return (<>
-        <HomeContainer>
-            <img src={LogoCITi} alt="" />
-            <h1>Aspirante Giulyano Santos</h1>
-            <p>
-                Made with
-                {' '}
-                <strong>&lt; &#x0002F; &gt;</strong>
-                {' '}
-                and
-                {' '}
-                <strong>&hearts;</strong>
-                {' '}
-                by Giulyano Santos
-            </p> 
-          
-        </HomeContainer>
-       <h1>Teste</h1>
+
+    <NavAthena />
+    <BodyAthena/>
+     <WhoMadeAthena /> 
+     <ContactUs/>
+     <Footerathena />
+ 
     </>);
 }
+

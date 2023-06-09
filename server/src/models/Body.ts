@@ -1,17 +1,14 @@
 import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
 
-//modelo do footer
+//modelo do body
 
 @Entity()
-export class Footer {
+export class Body {
 
     @PrimaryGeneratedColumn()
     id: number
 
     @Column()
-    nameInstadata: string
-
-    @Column()
-    numberdata: string
+    textdata: string
     
 }

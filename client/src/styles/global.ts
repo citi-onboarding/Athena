@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins";
   }
 
   html {
@@ -22,12 +23,12 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
-    font: 400 16px Roboto, sans-serif;
+    font: 400 16px Poppins, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 
   body {
-    font-family: sans-serif;
+    font-family: "Poppins";
   }
 
   button {
