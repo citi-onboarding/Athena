@@ -24,10 +24,15 @@ height: auto;
 
 
 position: absolute;
-top: 50%;
-left: 57%;
+top: 40%;
+left: 60%;
 transform: translate(-50%, -50%);
 padding: 10px;
 color: #fff;
+
+
+.name {
+  margin-top: 30px;
+}
 
 `

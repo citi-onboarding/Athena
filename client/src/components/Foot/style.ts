@@ -42,6 +42,9 @@ img{
 `
 
 export const Informationfooter = styled.div`
+
+background-color: red;
+
 p{
     position: absolute;
     width: 208px;

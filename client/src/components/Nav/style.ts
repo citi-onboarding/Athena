@@ -7,7 +7,7 @@ export const NavContainerStyled = styled.div`
 box-sizing: border-box;
 
 position: relative;
-width: 98vw;
+width: 100vw;
 height: 140px;
 
 background: #FFFFFF;
@@ -85,4 +85,6 @@ img{
 }
 
 `
+
+
 

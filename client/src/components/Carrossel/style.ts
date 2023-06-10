@@ -12,7 +12,9 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
-
+img {
+  filter: brightness(50%);
+}
 
 
 ` 

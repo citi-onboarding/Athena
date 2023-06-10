@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { NavContainerStyled, Entreemcontato, Logoathena, Logoinsta } from "./style";
-import {api} from '../../services/api'
 import logoInsta from '../../assets/logo-insta.png'
 import logoathena from '../../assets/logoathena.png'
 
