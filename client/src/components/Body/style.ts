@@ -26,7 +26,6 @@ p{
     display: flex;
     align-items: center;
     letter-spacing: 1.4px;
-
     color: #000000;
 }`
 
@@ -35,8 +34,8 @@ img{
     position: absolute;
     width: 120px;
     height: 120px;
-    left: 73px;
-    top: 660px;
+    right: 24vw;
+    top: 50vh;
 }
 `
 export const Bodyimg2 = styled.div`
@@ -44,8 +43,8 @@ img{
     position: absolute;
     width: 120px;
     height: 120px;
-    left: 267px;
-    top: 660px
+    right: 13.5vw;
+    top: 50vh;
 }
 `
 export const Bodyimg3 = styled.div`
@@ -53,8 +52,8 @@ img{
     position: absolute;
     width: 120px;
     height: 120px;
-    left: 461px;
-    top: 660px;
+    right: 34.5vw;
+    top: 71.5vh;
 }
 `
 export const Bodyimg4 = styled.div`
@@ -62,8 +61,8 @@ img{
     position: absolute;
     width: 120px;
     height: 120px;
-    left: 174px;
-    top: 808px;
+    right: 24vw;
+    top: 71.5vh;
 }
 `
 export const Bodyimg5 = styled.div`
@@ -71,17 +70,7 @@ img{
     position: absolute;
     width: 120px;
     height: 120px;
-    left: 373px;
-    top: 799px;
+    right: 13.5vw;
+    top: 71.5vh;
 }
-`
-
-export const Bodyrenrectangle = styled.div`
-position: absolute;
-width: 13.5vw;
-height: 18vh;
-left: 85vw;
-top: 141.6vh;
-
-background: #EB762E;
 `
