@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BodyContainerStyled, Bodyimg1, Bodyimg2, Bodyimg3, Bodyimg4, Bodyimg5, Informationbody, Bodyrenrectangle } from "./style";
+import { BodyContainerStyled, Bodyimg1, Bodyimg2, Bodyimg3, Bodyimg4, Bodyimg5, Informationbody } from "./style";
 import {api} from '../../services/api'
 import imagem1 from '../../assets/image_1.png'
 import imagem2 from '../../assets/image_2.png'
@@ -61,10 +61,6 @@ const Bodyathena: React.FC = () => {
             )
         })}
         
-
-        <Bodyrenrectangle>
-        
-        </Bodyrenrectangle>
     
     </BodyContainerStyled>
 
