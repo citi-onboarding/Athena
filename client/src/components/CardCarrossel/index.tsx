@@ -3,21 +3,20 @@ import { CardContainerStyled, CardTextContent } from "./style";
 
 
 export interface ICardCarrossel {
-  image: string,
-  name:string, 
+  image: string, 
+  name:string,
   text: string  
-  
+    
 }
 
 const CardCarrossel:React.FC<ICardCarrossel> = ({image, name, text}) => {
    return(
-    <CardContainerStyled>
+    <CardContainerStyled >
       <img src={image} alt="depoimento"/>
 
-
-      <CardTextContent >
-      <p>{text}</p>
-     <b> <p className="name">{name}</p></b>
+      <CardTextContent  >
+      <p className="text">{text}</p>
+      <b><p className="name">{name}</p></b>
       </CardTextContent>
 
      </CardContainerStyled>

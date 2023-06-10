@@ -6,6 +6,7 @@ export const CarrosselContainer = styled.div`
 width: 100vw;
 height: 700px;
 background: #131D4A;
+position: sticky;
 
 display: flex;
 flex-direction: column;

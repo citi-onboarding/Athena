@@ -8,12 +8,12 @@ export default class NavBarController implements Crud {
 
     async create(request: Request, response: Response){ 
        
-        const {namedata, textdata} = request.body;
+        const {linkinstadata, linknumberdata} = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(namedata, textdata);
+        const isAnyUndefined = Citi.areValuesUndefined(linkinstadata, linknumberdata);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newNavBar = { namedata, textdata };
+        const newNavBar = { linkinstadata, linknumberdata };
         const {httpStatus, message} = await Citi.insertIntoDatabase(NavBar, newNavBar);
 
         return response.status(httpStatus).send({ message });
@@ -36,12 +36,12 @@ export default class NavBarController implements Crud {
 
     async update(request: Request, response: Response){
         const { id } = request.params;
-        const {namedata, textdata } = request.body;
+        const {linkinstadata, linknumberdata } = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(namedata, textdata, id);
+        const isAnyUndefined = Citi.areValuesUndefined(linkinstadata, linknumberdata, id);
         if(isAnyUndefined) return response.status(400).send();
 
-        const navbarWithUpdatedValues = { namedata, textdata };
+        const navbarWithUpdatedValues = { linkinstadata, linknumberdata };
 
         const { httpStatus, messageFromUpdate } = await Citi.updateValue(NavBar, id, navbarWithUpdatedValues);
         return response.status(httpStatus).send({ messageFromUpdate });

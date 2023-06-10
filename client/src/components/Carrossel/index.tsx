@@ -7,7 +7,7 @@ import {ICardCarrossel} from '../CardCarrossel/index'
 import {api} from '../../services/api'
 
 
-const Carrossel: React.FC  = () => {
+const Carrossel: React.FC = () => {
 
 const [photosCarrossel, setPhotosCarrossel] = useState<ICardCarrossel[]>([])
   
@@ -16,7 +16,6 @@ const getPhotos = async () => {
   .then((res)=>{
     setPhotosCarrossel(res.data)
   }).catch((e)=>{console.log(e)}) 
-
 
 }
  
@@ -27,25 +26,18 @@ useEffect(()=>{
  return(
  <CarrosselContainer>
    
-  <Carousel axis='horizontal' showStatus={false} >
+  <Carousel 
+  axis='horizontal'
+  showStatus={false}  
+  >
+
+    {photosCarrossel.map((testimony)=>{
+       return(
+       <CardCarrossel  image={testimony.image} name={testimony.name} text={testimony.text} />
+   )
+    })}
 
 
-   {
-    photosCarrossel.map((testimony)=>{
-      return(<>
-      <CardCarrossel image={testimony.image} name={testimony.name} text={testimony.text} />
-      </>)
-    })
-   }
-
-
-
-
-
-
-
- 
- 
   </Carousel>
    
  </CarrosselContainer>

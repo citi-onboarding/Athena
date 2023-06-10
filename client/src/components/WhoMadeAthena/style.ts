@@ -6,6 +6,7 @@ export const AthenContainerStyled = styled.div`
 
 width: 100vw;
 height: 702px;
+position: absolute;
 
 /* display: flex;
 flex-direction: column;

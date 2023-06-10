@@ -6,7 +6,7 @@ export const NavContainerStyled = styled.div`
 
 box-sizing: border-box;
 
-position: relative;
+position: absolute;
 width: 100vw;
 height: 140px;
 
@@ -85,6 +85,8 @@ img{
 }
 
 `
-
-
-
+export const Informationnav = styled.div`
+a{
+    text-decoration: none;
+}
+`

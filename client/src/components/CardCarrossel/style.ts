@@ -1,17 +1,28 @@
 import 'styled-components'
 import styled from "styled-components";
 
+
+
+
 export const CardContainerStyled = styled.div`
 
-width: fit-content;
+width: 50%;
 height: auto;
 margin: 0 auto;
+
+img {
+  filter: brightness(70%)
+}
+
+
 
 
 `
 
+
+
+
 export const CardTextContent = styled.div`
-/* background-color: red; */
 
 font-family: 'Poppins';
 font-style: normal;
@@ -36,3 +47,6 @@ color: #fff;
 }
 
 `
+
+
+
