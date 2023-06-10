@@ -57,7 +57,7 @@ routes.put('/navbar/:id', navbarController.update);
 
 const peopleAthenaController = new PeopleAthenaController()
 
-routes.post('/peopleAthena', peopleAthenaController.create);
+routes.post('/peopleathena', peopleAthenaController.create);
 routes.get('/peopleathena', peopleAthenaController.get);
 routes.delete('/peopleathena/:id', peopleAthenaController.delete);
 routes.put('/peopleathena/:id', peopleAthenaController.update);
