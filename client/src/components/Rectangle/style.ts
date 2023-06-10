@@ -6,16 +6,16 @@ export const Bodycontainer = styled.div`
 position: absolute;
 width: 100vw;
 height: 123.6vh;
-top: 100px;
+top: 16vh;
 overflow: hidden;
 `
 
 export const Bodyrenrectangle = styled.div`
-position: relative;
-width: 1888.72px;
-height: 1208.56px;
-left: 241px;
-top: 50vh;
+position: absolute;
+width: 148vw;
+height: 200vh;
+left: 18.5vw;
+top: 20vh;
 
 background: #EB762E;
 transform: rotate(-45deg);

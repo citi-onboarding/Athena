@@ -14,13 +14,14 @@ p{
     width: 535px;
     height: 771px;
     left: 48px;
-    top: 37px;
+    top: 25px;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 22px;
+    line-height: 35px;
+    word-wrap: initial;
     /* or 92% */
 
     display: flex;
