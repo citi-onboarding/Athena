@@ -9,9 +9,9 @@ export class NavBar {
     id: number
 
     @Column()
-    namedata: string
+    linkinstadata: string
 
     @Column()
-    textdata: string
+    linknumberdata: string
 
 }

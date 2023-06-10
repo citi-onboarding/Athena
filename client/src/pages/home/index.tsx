@@ -1,5 +1,6 @@
 import React from "react";
 
+import Rectanglethena from "../../components/Rectangle"
 import Carrossel from "../../components/Carrossel";
 import WhoMadeAthena from "../../components/WhoMadeAthena";
 import NavAthena from "../../components/Nav";
@@ -12,13 +13,13 @@ import Footerathena from "../../components/Foot";
 
 export const Home: React.FC = () => {
     return (<>
-
-     <NavAthena />
+    <Rectanglethena/>
+    <NavAthena />
     <BodyAthena/>
-     <Carrossel/>
-     <WhoMadeAthena />
-     <ContactUs/>
-     <Footerathena />
+    <Carrossel/>
+    <WhoMadeAthena />
+    <ContactUs/>
+    <Footerathena />
  
     </>);
 }
