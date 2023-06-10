@@ -7,10 +7,7 @@ import {api} from '../../services/api'
 import { ICardCarrossel } from "../CardCarrossel";
 
 
-
-const Carrossel: React.FC  = () => {
-
-
+const Carrossel: React.FC = () => {
   const [photosCarrossel, setphotosCarrossel] = useState<ICardCarrossel[]>([])
 
   const getPhotos = async () => {
