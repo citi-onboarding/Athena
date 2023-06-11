@@ -33,7 +33,7 @@ useEffect(()=>{
 
     {photosCarrossel.map((testimony)=>{
        return(
-       <CardCarrossel  image={testimony.image} name={testimony.name} text={testimony.text} />
+       <CardCarrossel image={testimony.image} name={testimony.name} text={testimony.text} />
    )
     })}
 

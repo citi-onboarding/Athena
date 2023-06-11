@@ -6,18 +6,17 @@ export const ContactUsContainer = styled.div`
 font-family: 'Poppins';
 width: 100vw;
 height: auto;
-padding: 30px;
+padding-top: 50px;
 
 display: flex;
 justify-content: center;
-margin: 0 auto ;
+align-items: center;
+
 
 `
 
 
 export const FormHeading = styled.div`
-
-color:#ffff;
 
 display: block;
 justify-content: center;
@@ -48,7 +47,7 @@ display: flex;
 flex-direction: column;
 gap:5px;
 
-background: #131D4A;
+background-color: #131D4A;
 border-radius: 25px;
 
 padding: 20px;
@@ -62,7 +61,7 @@ padding: 25px;
 margin-right: 5px;
 margin-top: 10px ;
 
-background: #DDDFE6;
+background-color: #DDDFE6;
 border-radius: 17px;
 
 }
@@ -79,7 +78,7 @@ top: 585px;
 
 margin-top:20px;
 
-background: #EB762E;
+background-color: #EB762E;
 border-radius: 15px;
 
 font-family: 'Poppins';

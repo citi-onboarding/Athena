@@ -95,10 +95,9 @@ p{
 export const FooterContainerrentagulo = styled.div`
 position: absolute;
 width: 100vw;
-height: 214px;
+height: 220px;
 left: 0px;
 top: 3279px;
-
 background: #131D4A;
 `
 
