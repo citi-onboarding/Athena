@@ -9,12 +9,12 @@ export default class TestimonyController implements Crud {
 
     async create(request: Request, response: Response){ 
         
-        const {image, text} = request.body
+        const {image, name, text} = request.body
          
-        const isAnyUndefined = Citi.areValuesUndefined(image, text);
+        const isAnyUndefined = Citi.areValuesUndefined(image, name, text);
         if(isAnyUndefined) return response.status(400).send();
         
-        const newTestimony =  {image, text} ;
+        const newTestimony =  {image, name, text} ;
         const {httpStatus, message} = await Citi.insertIntoDatabase(Testimony, newTestimony);
 
         return response.status(httpStatus).send({ message });
@@ -37,12 +37,12 @@ export default class TestimonyController implements Crud {
 
     async update(request: Request, response: Response){
         const { id } = request.params;
-        const {image, text } = request.body;
+        const {image, name, text } = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(image, text, id);
+        const isAnyUndefined = Citi.areValuesUndefined(image, name, text, id);
         if(isAnyUndefined) return response.status(400).send();
 
-        const testimonyWithUpdatedValues = { image, text };
+        const testimonyWithUpdatedValues = { image, name, text };
 
         const { httpStatus, messageFromUpdate } = await Citi.updateValue(Testimony, id, testimonyWithUpdatedValues);
         return response.status(httpStatus).send({ messageFromUpdate });

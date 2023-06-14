@@ -21,7 +21,7 @@ background-color: #DDDFE6;
 
 img {
   width: 100%;
-  height: fit-content;
+  height: 50%;
   border-radius: 20px;
   padding: 10px;
 

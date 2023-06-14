@@ -11,6 +11,9 @@ export class Testimony {
     image: string
 
     @Column()
+    name: string
+
+    @Column()
     text: string
 
 }

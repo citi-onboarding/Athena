@@ -16,12 +16,11 @@ const Navathena: React.FC = () => {
   const [athenaInformationnav, setAthenInformationnav ] = useState<informationnav[]>([])
 
     const getInformation = async () => {
-     
+
         await api.get('/navbar').then((res)=>{
         setAthenInformationnav(res.data)
        }).catch((e)=>{console.log(e)}) 
        
-  
      }
   
       useEffect(()=>{

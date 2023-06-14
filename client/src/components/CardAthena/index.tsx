@@ -18,7 +18,7 @@ const CardAthena: React.FC<ICardAthena> = ({name,image,text}) => {
     
       <CardContentStyled>
       <h2>{name}</h2>
-      <p>{text}</p> 
+      <p>{text}</p>
       </CardContentStyled>
 
 
